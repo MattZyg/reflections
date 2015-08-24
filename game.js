@@ -116,6 +116,8 @@ Sprite = function () {
   this.y     = 0;
   this.rot   = 0;
   this.scale = 1;
+  this.colour = 'yellow';
+  this.solid = true;
 
   this.currentNode = null;
   this.nextSprite  = null;
@@ -724,6 +726,8 @@ Coin = function () {
               0, -5]);
 
   this.collidesWith = ["ship"];
+  this.color = 'yellow';
+  this.solid = true;
 
   this.newPosition = function () {
     this.x = Math.random() * Game.canvasWidth;
